@@ -1,0 +1,54 @@
+/*!
+ * Copyright (C) 2016 Andrea Meini, Alessandro Marco Migneco
+ *
+ * This file is part of SmartLocker.
+ *
+ * SmartLocker is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * SmartLocker is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with SmartLocker.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+subprojects {
+	apply plugin: 'java'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'com.google.guava:guava:19.0'
+
+	testCompile 'junit:junit:4.12',
+			'com.google.guava:guava:19.0'
+}
+
+project(':core') {
+	jar.manifest.attributes
+		'Implementation-Title': 'Smart Locker Core',
+		'Implementation-Version': '0.1.0',
+		'Main-Class': 'net.ddns.darkbytes.smartlocker.<main-class>'
+}
+
+project(':client') {
+	jar.manifest.attributes
+		'Implementation-Title': 'Smart Locker Client',
+		'Implementation-Version': '0.1.0',
+		'Main-Class': 'net.ddns.darkbytes.smartlocker.<main-class>'
+}
+
+project(':server') {
+	jar.manifest.attributes
+		'Implementation-Title': 'Smart Locker Server',
+		'Implementation-Version': '0.1.0',
+		'Main-Class': 'net.ddns.darkbytes.smartlocker.<main-class>'
+}

@@ -18,6 +18,18 @@ The full changelog is kept in a special file. [Click here](CHANGELOG.md) to brow
 ### Contributors
 
 ### Third party tools and libraries
+#### Tools
+* [Git](http://git-scm.com/) + [GitFlow](https://github.com/nvie/gitflow) + [GitHub](https://github.com/)  
+	Nice combo for source management apps!
+* [Atom](https://atom.io/)  
+	An awesome, open-source, text editor from the GitHub guys with a ton of feature.
+* [Gradle](http://gradle.org/)  
+	A build automation system which incredibly simplifies project management.
+
+#### Libraries
+* [Guava](https://github.com/google/guava)
+* [jUnit](http://junit.org/)  
+	For testing our code.
 
 ## License
 
@@ -44,6 +56,8 @@ As you might have noticed already, this project is hosted on [GitHub][] and uses
 2. Create a feature branch from `develop`.
 3. Push your feature branch.
 4. Make a *pull request*.
+
+[gitflow-model]: http://nvie.com/posts/a-successful-git-branching-model/
 
 ## Contact
 
