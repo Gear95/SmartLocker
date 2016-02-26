@@ -14,6 +14,8 @@ The full changelog is kept in a special file. [Click here](CHANGELOG.md) to brow
 ## Credits
 
 ### Authors
+- [Gear95](https://github.com/Gear95)
+- [AssassinsMod](https://github.com/AssassinsMod)
 
 ### Contributors
 
